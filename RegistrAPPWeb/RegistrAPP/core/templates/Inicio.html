@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" media="only screen and (max-width: 768px)" href="{% static '../static/css/style.css' %}">
+  <link type="text/css" rel="stylesheet" href="{% static '../static/css/style.css' %}">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg colorbarra">
+      <div class="container-fluid">
+        <ul class="colortitulo " >Registr<span>APP</span></ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex flex-row-reverse bd-highlight" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active " aria-current="page" href="{% url 'Inicio'%}" style="color: #c8c3c3;">Home</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<section class="header1">
+  <div class="overlay">
+    <h1><ul class="colorheader " >Registr<span>APP</span></ul></h1>
+    <p>Registrapp es una aplicacion realizada para poder registrar las asistencias de los estudiantes los cuales
+      asisten a sus clases en el Duoc UC</p>
+      <br>
+        </div>
+</section>
+
+<section>
+  <ul class="list">
+   
+    <li class="item">
+       <div class="header-item1">
+          <span class="number">01</span>
+          <div class="title"> Registro</div>
+       </div>
+      
+       <div class="content-item">
+         <p>En este pagina de la app se puede realizar el registro de los alumnos para que esto quede guardado en una base de datos</p>
+				<img  src="{% static '../static/img/Registro.png' %}" alt="Graphic">
+      </div>
+    </li>
+   
+    <li class="item">
+       <div class="header-item2">
+          <span class="number">02</span>
+          <div class="title">Inicio de Sesion</div>
+       </div>
+      
+       <div class="content-item">
+         <p>Se puede realizar uin inicio de sesion de forma efectiva haciendo la comprobacion con la base de dato</p>
+				<img src="{% static '../static/img/InicioSeccion.png' %}"alt="Graphic">
+      </div>
+    </li>
+   
+    <li class="item">
+       <div class="header-item3">
+          <span class="number">03</span>
+          <div class="title">Recuperar</div>
+       </div>
+      
+       <div class="content-item">
+         <p>Se puede realizar una recuperacion de contraseña con el correo electronico</p>
+				<img src="{% static '../static/img/Recuperar.png' %}" alt="Graphic">
+      </div>
+    </li>
+   
+    <li class="item">
+       <div class="header-item4">
+          <span class="number">04</span>
+          <div class="title">Usuario</div>
+       </div>
+      
+       <div class="content-item">
+         <p>Se pueden realizar los registros de los alumnos a cada clase</p>
+				<img src="{% static '../static/img/Usuario.png' %}" alt="Graphic">
+      </div>
+    </li>
+   
+   <li class="item">
+       <div class="header-item5">
+          <span class="number">05</span>
+          <div class="title">QR</div>
+       </div>
+      
+       <div class="content-item">
+         <p>Se puede realizar un scaneo de QR para poder registrar las clases asistidas</p>
+				<img src="{% static '../static/img/qr.png' %}" alt="Graphic">
+      </div>
+    </li>
+
+    <li class="item">
+      <div class="header-item6">
+         <span class="number">06</span>
+         <div class="title">Clases</div>
+      </div>
+     
+      <div class="content-item">
+        <p>Aqui salen las clases las cuales fueron registradas por el estudiante</p>
+       <img src="{% static '../static/img/clases.png' %}" alt="Graphic">
+     </div>
+   </li>
+    
+
+  </ul>
+</section>
+
+<section>
+  <article class="container3">   
+    <div>
+      <p>DESCARGA DESDE AQUI</p>
+      <div class="ocultar-div">
+      <img class="descargaimage" src="{% static '../static/img/codigo-qr.png' %}" alt=""/>
+    </div>
+      <br>
+      <div class="ocultar-boton">
+      <button class="button-85" role="button" href="https://mega.nz/file/CwME0RzQ#Du4cj9s0cGHExYga0R7PQ12-Cx8XIdp0K4TGoSBeU2E">DESCARGAR</button>
+      </div>
+    </div>
+  </article>
+</section>
+
+  <footer class="text-center text-lg-start bg-black text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <p class="colortitule" href="#">Registr<span>APP</span></p>
+            <br>
+            <p>
+              Registrapp es una aplicacion realizada para poder registrar las asistencias de los estudiantes los cuales
+              asisten a sus clases en el Duoc UC
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i>Viña del Mar, Valparaiso</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              Registrapp@duocuc.cl
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +56 227120640</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> +56 933191008</p>
+          </div>
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h5 class="text-uppercase mb-4">Suscribete en Registrapp</h5>
+
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email</label>
+            </div>
+
+            <button class="button-64" role="button"><span class="text">Suscribete</span></button>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+
+    </section>
+  </footer>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="../static/js/header.js"></script>
+<script src="../static/js/UserAgent.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</html>
