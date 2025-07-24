@@ -1,4 +1,4 @@
-name: Django CI for RegistrAPPWeb
+name: Django CI - RegistrAPPWeb
 
 on:
   push:
@@ -9,27 +9,31 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🐍 Setup Python 3.11
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install django djangorestframework Pillow
-          # Agrega aquí los extra que necesites
+          pip install django
+          pip install django-allauth
+          pip install djangorestframework
+          pip install django-rest-auth
+          pip install Pillow
 
-      - name: Migrate database
+      - name: 🛠️ Run migrations
         run: |
-          cd RegistrAPPWeb
+          cd RegistrAPPWeb/RegistrAPP
           python manage.py migrate --run-syncdb
 
-      - name: Check project
+      - name: ✅ Check Django project
         run: |
-          cd RegistrAPPWeb
+          cd RegistrAPPWeb/RegistrAPP
           python manage.py check
